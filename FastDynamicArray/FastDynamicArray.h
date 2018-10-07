@@ -35,9 +35,9 @@
  */
 typedef struct DynamicVector {
     struct _ItemDynamicVector **vectors; /** Dynamic vector of basic element */
-    long int block; /** Number of blocks of basic elements */
-    long int capacity; /** Size of allocated storage capacity */
-    long int size; /** Occupied spaces */
+    unsigned long int block; /** Number of blocks of basic elements */
+    unsigned long int capacity; /** Size of allocated storage capacity */
+    unsigned long int size; /** Occupied spaces */
 } DynamicVector;
 
 /**
@@ -92,7 +92,7 @@ void dyvec_set(DynamicVector*, long int, void*);
  *
  * If the size is smaller than the previous some elements may be deleted.
  */
-void dyvec_resize(DynamicVector*, long int);
+void dyvec_resize(DynamicVector*, unsigned long int);
 
 /**
  *
@@ -133,5 +133,22 @@ void dyvec_push(DynamicVector*, void*);
  * \param vector
  */
 void dyvec_free(DynamicVector*);
+
+//! shortcut for general purpose
+#define FDA_INIT(vec) DynamicVector vec; dyvec_init(&vec)
+//! shortcut for general purpose
+#define FDA_ADD(vec, item) dyvec_add(&vec, (void*) item)
+//! shortcut for general purpose
+#define FDA_SET(vec, id, item) dyvec_set(&vec, id, (void*) item)
+//! shortcut for general purpose
+#define FDA_GET(vec, type, id) (type) dyvec_get(&vec, id)
+//! shortcut for general purpose
+#define FDA_ERASE(vec, id) dyvec_erase(&vec, id)
+//! shortcut for general purpose
+#define FDA_POP(vec, type) (type) dyvec_pop(&vec)
+//! shortcut for general purpose
+#define FDA_PUSH(vec, item) dyvec_push(&vec, (void*) item)
+//! shortcut for general purpose
+#define FDA_FREE(vec) dyvec_free(&vec)
 
 #endif //DYNAMIC_ARRAY_FASTDYNAMICARRAY_H

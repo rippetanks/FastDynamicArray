@@ -15,12 +15,16 @@ add_executable(
         HappyBear/HappyBear.h HappyBear/HappyBear.c
         Matugm/Matugm.h Matugm/Matugm.c
         FastDynamicArray/FastDynamicArray.h FastDynamicArray/FastDynamicArray.c
+        FastDynamicArray/FastDynamicArrayInt.h FastDynamicArray/FastDynamicArrayInt.c
         Test/Performance/test.h Test/Performance/test.c
         Test/Performance/test_edd_mann.c
         Test/Performance/test_stack_overflow.c
         Test/Performance/test_happy_bear.c
         Test/Performance/test_matugm.c
         Test/Performance/test_fast_dynamic_array.c
+        Test/Performance/test_fast_dynamic_array_specializations.c
         Test/Performance/test_std_array.c
         Test/UnitTest/unity.h Test/UnitTest/unity_internals.h Test/UnitTest/unity.c
-        Test/UnitTest/unit_test.h Test/UnitTest/unit_test.c)
+        Test/UnitTest/unit_test.h Test/UnitTest/unit_test.c
+        Test/UnitTest/unit_test_int.c
+        Example/example.h)

@@ -314,6 +314,33 @@ void execute_test_pop(Summary *riepilogo) {
         riepilogo[progTest].desc[0] = 0;
 }
 
+void execute_test_specializations(Summary *riepilogo) {
+    double time;
+    int i, j, progTest;
+    unsigned int nItem;
+    double result[_REPEAT];
+    // obj is a random value
+    int obj = 128;
+
+    progTest = 0;
+    printf("Execute TEST SPECIALIZATIONS! Repeat for each test: %d\n", _REPEAT);
+    for(j = 0; j < N_TEST; j++) {
+        // execute test on nItem elements
+        nItem = _N_ITEMS_FOR_TEST[j];
+        progTest = 0;
+        printf("Execute test on %d item... \n", nItem);
+
+        /*
+         * Repeat the test for _REPEAT times, calculates a mean and stores the result into "riepilogo"
+         */
+        for (i = 0; i < _REPEAT; i++)
+            result[i] = _test_all_fast_dynamic_array_int(obj, nItem);
+        time = _calc_summary(riepilogo, result, _REPEAT, progTest, j, nItem, 0, "FDA Int");
+        printf("FDA Int - RESULT: %.3fs\n", time);
+        progTest++;
+    }
+}
+
 void print_time(Summary *riepilogo, char descrizione[]) {
     int i, j;
 

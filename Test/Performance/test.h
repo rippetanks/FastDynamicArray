@@ -156,6 +156,12 @@ void execute_test_delete(Summary*);
 void execute_test_pop(Summary*);
 
 /**
+ * \brief Performs test specialization of FastDynamicArray
+ * \param[out] test summary
+ */
+void execute_test_specializations(Summary*);
+
+/**
  *  \brief Print the results of a summary (time)
  *  \param summary
  *  \param description
@@ -191,5 +197,8 @@ double _media(double *v, int n);
  *  \param unused space in the vector
  */
 double _calc_summary(Summary*, double*, int, int, int, unsigned int, unsigned int, char*);
+
+/* TEST for INT */
+double _test_all_fast_dynamic_array_int(int, int);
 
 #endif //DYNAMIC_ARRAY_TEST_H

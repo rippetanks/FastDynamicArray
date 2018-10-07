@@ -49,4 +49,13 @@ void utest_push_pop();
  */
 void utest_free();
 
+/* INT unit test */
+void utest_int_init();
+void utest_int_insert_read_write();
+void utest_int_insert_resize();
+void utest_int_erase();
+void utest_int_erase_interval();
+void utest_int_push_pop();
+void utest_int_free();
+
 #endif //DYNAMIC_ARRAY_UNIT_TEST_H
