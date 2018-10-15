@@ -165,8 +165,9 @@ void execute_test_specializations(Summary*);
  *  \brief Print the results of a summary (time)
  *  \param summary
  *  \param description
+ *  \param number of summary elements
  */
-void print_time(Summary*, char*);
+void print_time(Summary*, char*, int);
 /**
  *  \brief Print the results of a summary (space)
  *  \param summary
@@ -200,5 +201,19 @@ double _calc_summary(Summary*, double*, int, int, int, unsigned int, unsigned in
 
 /* TEST for INT */
 double _test_all_fast_dynamic_array_int(int, int);
+/* TEST for CHAR */
+double _test_all_fast_dynamic_array_char(char, int);
+/* TEST for SHORT INT */
+double _test_all_fast_dynamic_array_shortint(short int, int);
+/* TEST for LONG INT */
+double _test_all_fast_dynamic_array_longint(long int, int);
+/* TEST for LONG LONG INT */
+double _test_all_fast_dynamic_array_longlongint(long long int, int);
+/* TEST for FLOAT */
+double _test_all_fast_dynamic_array_float(float, int);
+/* TEST for DOUBLE */
+double _test_all_fast_dynamic_array_double(double, int);
+/* TEST for LONG DOUBLE */
+double _test_all_fast_dynamic_array_longdouble(long double, int);
 
 #endif //DYNAMIC_ARRAY_TEST_H

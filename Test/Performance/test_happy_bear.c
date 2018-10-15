@@ -10,7 +10,7 @@
 #include <stdlib.h>
 
 #include "test.h"
-#include "../../HappyBear/HappyBear.h"
+#include "../../Other/HappyBear/HappyBear.h"
 
 static hb_Vector *v = NULL;
 

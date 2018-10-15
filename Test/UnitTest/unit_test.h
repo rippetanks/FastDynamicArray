@@ -58,4 +58,67 @@ void utest_int_erase_interval();
 void utest_int_push_pop();
 void utest_int_free();
 
+/* CHAR unit test */
+void utest_char_init();
+void utest_char_insert_read_write();
+void utest_char_insert_resize();
+void utest_char_erase();
+void utest_char_erase_interval();
+void utest_char_push_pop();
+void utest_char_free();
+
+/* SHORT INT unit test */
+void utest_sint_init();
+void utest_sint_insert_read_write();
+void utest_sint_insert_resize();
+void utest_sint_erase();
+void utest_sint_erase_interval();
+void utest_sint_push_pop();
+void utest_sint_free();
+
+/* LONG INT unit test */
+void utest_long_init();
+void utest_long_insert_read_write();
+void utest_long_insert_resize();
+void utest_long_erase();
+void utest_long_erase_interval();
+void utest_long_push_pop();
+void utest_long_free();
+
+/* LONG LONG INT unit test */
+void utest_longlong_init();
+void utest_longlong_insert_read_write();
+void utest_longlong_insert_resize();
+void utest_longlong_erase();
+void utest_longlong_erase_interval();
+void utest_longlong_push_pop();
+void utest_longlong_free();
+
+/* FLOAT unit test */
+void utest_float_init();
+void utest_float_insert_read_write();
+void utest_float_insert_resize();
+void utest_float_erase();
+void utest_float_erase_interval();
+void utest_float_push_pop();
+void utest_float_free();
+
+/* DOUBLE unit test */
+void utest_double_init();
+void utest_double_insert_read_write();
+void utest_double_insert_resize();
+void utest_double_erase();
+void utest_double_erase_interval();
+void utest_double_push_pop();
+void utest_double_free();
+
+/* LONG DOUBLE unit test */
+void utest_longdouble_init();
+void utest_longdouble_insert_read_write();
+void utest_longdouble_insert_resize();
+void utest_longdouble_erase();
+void utest_longdouble_erase_interval();
+void utest_longdouble_push_pop();
+void utest_longdouble_free();
+
 #endif //DYNAMIC_ARRAY_UNIT_TEST_H

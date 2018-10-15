@@ -11,7 +11,7 @@
 
 #include "test.h"
 
-#include "../../Matugm/Matugm.h"
+#include "../../Other/Matugm/Matugm.h"
 
 static ma_ArrayData *v = NULL;
 

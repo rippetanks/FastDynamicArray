@@ -62,21 +62,21 @@ void dyvec_int_free(DynamicVectorInt*);
 #define FDA_INT_FREE(vec) dyvec_int_free(&vec)
 
 #define FDA_UINT_INIT(vec) DynamicVectorInt vec; dyvec_int_init(&vec)
-#define FDA_UINT_ADD(vec, item) dyvec_int_add(&vec, (unsigned int) item)
-#define FDA_UINT_SET(vec, id, item) dyvec_int_set(&vec, id, (unsigned int) item)
+#define FDA_UINT_ADD(vec, item) dyvec_int_add(&vec, (int) item)
+#define FDA_UINT_SET(vec, id, item) dyvec_int_set(&vec, id, (int) item)
 #define FDA_UINT_GET(vec, id) (unsigned int) dyvec_int_get(&vec, id)
 #define FDA_UINT_ERASE(vec, id) dyvec_int_erase(&vec, id)
 #define FDA_UINT_POP(vec) (unsigned int) dyvec_int_pop(&vec)
-#define FDA_UINT_PUSH(vec, item) dyvec_int_push(&vec, (unsigned int) item)
+#define FDA_UINT_PUSH(vec, item) dyvec_int_push(&vec, (int) item)
 #define FDA_UINT_FREE(vec) dyvec_int_free(&vec)
 
 #define FDA_SINT_INIT(vec) DynamicVectorInt vec; dyvec_int_init(&vec)
-#define FDA_SINT_ADD(vec, item) dyvec_int_add(&vec, (signed int) item)
-#define FDA_SINT_SET(vec, id, item) dyvec_int_set(&vec, id, (signed int) item)
+#define FDA_SINT_ADD(vec, item) dyvec_int_add(&vec, (int) item)
+#define FDA_SINT_SET(vec, id, item) dyvec_int_set(&vec, id, (int) item)
 #define FDA_SINT_GET(vec, id) (signed int) dyvec_int_get(&vec, id)
 #define FDA_SINT_ERASE(vec, id) dyvec_int_erase(&vec, id)
 #define FDA_SINT_POP(vec) (signed int) dyvec_int_pop(&vec)
-#define FDA_SINT_PUSH(vec, item) dyvec_int_push(&vec, (signed int) item)
+#define FDA_SINT_PUSH(vec, item) dyvec_int_push(&vec, (int) item)
 #define FDA_SINT_FREE(vec) dyvec_int_free(&vec)
 
 #endif //DYNAMIC_ARRAY_FASTDYNAMICARRAYINT_H

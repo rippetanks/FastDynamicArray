@@ -10,7 +10,7 @@
 #include <stdlib.h>
 
 #include "test.h"
-#include "../../EddMann/EddMann.h"
+#include "../../Other/EddMann/EddMann.h"
 
 static ed_vector *v = NULL;
 
